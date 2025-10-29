@@ -1,0 +1,14 @@
+/Users/batman/Documents/c#/HelloWorld/bin/Debug/net9.0/HelloWorld
+/Users/batman/Documents/c#/HelloWorld/bin/Debug/net9.0/HelloWorld.deps.json
+/Users/batman/Documents/c#/HelloWorld/bin/Debug/net9.0/HelloWorld.runtimeconfig.json
+/Users/batman/Documents/c#/HelloWorld/bin/Debug/net9.0/HelloWorld.dll
+/Users/batman/Documents/c#/HelloWorld/bin/Debug/net9.0/HelloWorld.pdb
+/Users/batman/Documents/c#/HelloWorld/obj/Debug/net9.0/HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/batman/Documents/c#/HelloWorld/obj/Debug/net9.0/HelloWorld.AssemblyInfoInputs.cache
+/Users/batman/Documents/c#/HelloWorld/obj/Debug/net9.0/HelloWorld.AssemblyInfo.cs
+/Users/batman/Documents/c#/HelloWorld/obj/Debug/net9.0/HelloWorld.csproj.CoreCompileInputs.cache
+/Users/batman/Documents/c#/HelloWorld/obj/Debug/net9.0/HelloWorld.dll
+/Users/batman/Documents/c#/HelloWorld/obj/Debug/net9.0/refint/HelloWorld.dll
+/Users/batman/Documents/c#/HelloWorld/obj/Debug/net9.0/HelloWorld.pdb
+/Users/batman/Documents/c#/HelloWorld/obj/Debug/net9.0/HelloWorld.genruntimeconfig.cache
+/Users/batman/Documents/c#/HelloWorld/obj/Debug/net9.0/ref/HelloWorld.dll
