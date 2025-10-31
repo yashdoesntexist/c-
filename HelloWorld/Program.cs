@@ -1,12 +1,39 @@
 ﻿using System;
 
-namespace MyApp
+namespace HelloWorld
 {
     internal class Program
     {
         static void Main(string[] args)
 
         {
+
+            int age = 20;
+
+            if (age < 18)
+            {
+                Console.WriteLine("You are not an adult yet");
+            }
+            else
+            {
+                Console.WriteLine("You are an adult");
+            }
+
+            int temp = 12;
+
+            if (temp > 30)
+            {
+                Console.WriteLine("Its hot");
+            }
+            else if (temp > 15)
+
+            {
+                Console.WriteLine("Its warm");
+            }
+            else
+            {
+                Console.WriteLine("Its cold");
+            }
 
             int[] nums = { 1, 2, 3, 4, 5 };
 
@@ -59,7 +86,7 @@ namespace MyApp
                 j++;
             } while (j < 5);
         }
-
+        
 
 
     }
