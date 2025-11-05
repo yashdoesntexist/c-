@@ -4,44 +4,67 @@ namespace HelloWorld
 {
     internal class Program
     {
+        public static int addNum(int i, int j)
+        {
+            return i + j;
+        }
+        public static int returnSquare(int n)
+        {
+            return n * n;
+        }
+
+        static void sayHello(string Name)
+        {
+            Console.WriteLine("Hello " + Name);
+        }
+
         static void Main(string[] args)
 
         {
+            Console.WriteLine(returnSquare(4));
 
-            int age = 20;
+            sayHello("Bruce");
 
-            if (age < 18)
-            {
-                Console.WriteLine("You are not an adult yet");
-            }
-            else
-            {
-                Console.WriteLine("You are an adult");
-            }
+            Console.WriteLine(addNum(4, 6));
 
-            int temp = 12;
+            // int age = 17;
 
-            if (temp > 30)
-            {
-                Console.WriteLine("Its hot");
-            }
-            else if (temp > 15)
+            // string resultIternary = (age <= 18) ? "Minor" : "Adult";
 
-            {
-                Console.WriteLine("Its warm");
-            }
-            else
-            {
-                Console.WriteLine("Its cold");
-            }
+            // Console.WriteLine(resultIternary);
 
-            int[] nums = { 1, 2, 3, 4, 5 };
+            // if (age < 18)
+            // {
+            //     Console.WriteLine("You are not an adult yet");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("You are an adult");
+            // }
+
+            // int temp = 12;
+
+            // if (temp > 30)
+            // {
+            //     Console.WriteLine("Its hot");
+            // }
+            // else if (temp > 15)
+
+            // {
+            //     Console.WriteLine("Its warm");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Its cold");
+            // }
+
+            // int[] nums = { 1, 2, 3, 4, 5 };
 
 
-            foreach (var n in nums.Where(num => num % 2 == 0))
-            {
-                Console.WriteLine(n);
-            }
+            // foreach (var n in nums.Where(num => num % 2 == 0))
+            // {
+            //     Console.WriteLine(n);
+            // }
             // Parallel.For(0, 5, i =>
             // {
             //     Console.WriteLine(i);
@@ -51,42 +74,42 @@ namespace HelloWorld
             // var numbers = new List<int> { 1, 2, 3, 4, 5 };
             // numbers.ForEach(n => Console.WriteLine(n));
 
-            int[] numbers = { 1, 2, 3, 4, 5 };
+            // int[] numbers = { 1, 2, 3, 4, 5 };
 
-            Parallel.ForEach(numbers, n =>
-            {
-                Console.WriteLine($"Parallel: {n}");
-            });
+            // Parallel.ForEach(numbers, n =>
+            // {
+            //     Console.WriteLine($"Parallel: {n}");
+            // });
 
 
 
-            string[] names = ["James", "Bruce", "Huey"];
+            // string[] names = ["James", "Bruce", "Huey"];
 
-            foreach (string name in names)
-            {
-                Console.WriteLine(name);
-            }
+            // foreach (string name in names)
+            // {
+            //     Console.WriteLine(name);
+            // }
 
-            for (int k = 0; k < 5; k++)
-            {
-                Console.WriteLine(k);
-            }
+            // for (int k = 0; k < 5; k++)
+            // {
+            //     Console.WriteLine(k);
+            // }
 
-            int i = 0;
-            while (i < 5)
-            {
-                Console.WriteLine(i);
-                i++;
-            }
+            // int i = 0;
+            // while (i < 5)
+            // {
+            //     Console.WriteLine(i);
+            //     i++;
+            // }
 
-            int j = 0;
-            do
-            {
-                Console.WriteLine(j);
-                j++;
-            } while (j < 5);
+            // int j = 0;
+            // do
+            // {
+            //     Console.WriteLine(j);
+            //     j++;
+            // } while (j < 5);
         }
-        
+
 
 
     }
