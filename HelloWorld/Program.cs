@@ -1,13 +1,41 @@
 ﻿using System;
+using Functions;
 
 namespace HelloWorld
 {
+    
     internal class Program
     {
+        public static void TowerOfHanoi(int n, string source, string helper, string destination)
+        {
+            if (n == 1)
+            {
+                Console.WriteLine("Transferring Disk " + n + " from " + source + " to " + destination);
+                return;
+            }
+            TowerOfHanoi(n - 1, source, destination, helper);
+            Console.WriteLine("Transfer disk " + n + " from " + source + " to " + destination);
+            TowerOfHanoi(n - 1, helper, source, destination);
+            
+            
+        }
+
+        public static void PrintLoop(int n)
+        {
+            if (n == 0)
+            {
+                return;
+            }
+
+            Console.WriteLine(n);
+            PrintLoop(n - 1);
+        }
+
         public static int addNum(int i, int j)
         {
             return i + j;
         }
+
         public static int returnSquare(int n)
         {
             return n * n;
@@ -19,98 +47,37 @@ namespace HelloWorld
         }
 
         static void Main(string[] args)
-
         {
-            Console.WriteLine(returnSquare(4));
+            var hashSet = new HashSet<int>() {1,2,3,4,5,5,5,5};
+            var hashA = new HashSet<int>() {1,2,3,4};
+            var hashB = new HashSet<int>() {3,4,5,6};
+            var s = new SortedSet<int> {5, 1, 3};
+            var ages = new Dictionary<string, int>();
+            ages["Bruce"] = 35;
+            ages["Clark"] = 40;
+            
+            hashSet.Add(6);
+            hashSet.Remove(3);
+            foreach (var i in s)
+            {
+                Console.WriteLine(i);
+            }
 
-            sayHello("Bruce");
-
-            Console.WriteLine(addNum(4, 6));
-
-            // int age = 17;
-
-            // string resultIternary = (age <= 18) ? "Minor" : "Adult";
-
-            // Console.WriteLine(resultIternary);
-
-            // if (age < 18)
-            // {
-            //     Console.WriteLine("You are not an adult yet");
-            // }
-            // else
-            // {
-            //     Console.WriteLine("You are an adult");
-            // }
-
-            // int temp = 12;
-
-            // if (temp > 30)
-            // {
-            //     Console.WriteLine("Its hot");
-            // }
-            // else if (temp > 15)
-
-            // {
-            //     Console.WriteLine("Its warm");
-            // }
-            // else
-            // {
-            //     Console.WriteLine("Its cold");
-            // }
-
-            // int[] nums = { 1, 2, 3, 4, 5 };
-
-
-            // foreach (var n in nums.Where(num => num % 2 == 0))
-            // {
-            //     Console.WriteLine(n);
-            // }
-            // Parallel.For(0, 5, i =>
-            // {
-            //     Console.WriteLine(i);
-            // });
-
-
-            // var numbers = new List<int> { 1, 2, 3, 4, 5 };
-            // numbers.ForEach(n => Console.WriteLine(n));
-
-            // int[] numbers = { 1, 2, 3, 4, 5 };
-
-            // Parallel.ForEach(numbers, n =>
-            // {
-            //     Console.WriteLine($"Parallel: {n}");
-            // });
-
-
-
-            // string[] names = ["James", "Bruce", "Huey"];
-
-            // foreach (string name in names)
-            // {
-            //     Console.WriteLine(name);
-            // }
-
-            // for (int k = 0; k < 5; k++)
-            // {
-            //     Console.WriteLine(k);
-            // }
-
-            // int i = 0;
-            // while (i < 5)
-            // {
-            //     Console.WriteLine(i);
-            //     i++;
-            // }
-
-            // int j = 0;
-            // do
-            // {
-            //     Console.WriteLine(j);
-            //     j++;
-            // } while (j < 5);
+            if (hashSet.Contains(5))
+            {
+                Console.WriteLine("Yay");
+            }
+            hashA.UnionWith(hashB);
+            hashA.IntersectWith(hashB);
+            hashA.ExceptWith(hashB);
+            hashA.SymmetricExceptWith(hashB);
+            
+            Console.WriteLine(hashSet.Count);
+            //PrintLoop(9);
+            //Console.WriteLine(returnSquare(4));
+            //sayHello("Bruce");
+            //Console.WriteLine(addNum(4, 6));
+            //TowerOfHanoi(3, "Source", "Helper", "Destination");
         }
-
-
-
     }
 }
